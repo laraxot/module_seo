@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('seo')->group(function() {
-    Route::get('/', 'SeoController@index');
-});
+//Route::prefix('seo')->group(function() {
+//    Route::get('/', 'SeoController@index');
+//});
