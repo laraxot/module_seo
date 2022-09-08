@@ -14,12 +14,10 @@ class SeoServiceProvider extends XotBaseServiceProvider {
 
     public string $module_name = 'seo';
 
-    public function bootCallback(): void
-    {
+    public function bootCallback(): void {
         BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Seo');
     }
 
-    public function registerCallback(): void
-    {
+    public function registerCallback(): void {
     }
 }

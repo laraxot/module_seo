@@ -1,9 +1,8 @@
 <?php
 
 /**
-* @link https://www.digitalocean.com/community/questions/how-to-automatically-generate-sitemap-with-laravel
-*
-* @link https://freek.dev/557-automatically-generate-a-sitemap-in-laravel
+ * @see https://www.digitalocean.com/community/questions/how-to-automatically-generate-sitemap-with-laravel
+ * @see https://freek.dev/557-automatically-generate-a-sitemap-in-laravel
  */
 
 declare(strict_types=1);

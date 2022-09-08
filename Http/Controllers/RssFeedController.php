@@ -1,6 +1,6 @@
 <?php
 /**
- * @link  https://devdojo.com/bobbyiliev/how-to-add-a-simple-rss-feed-to-laravel-without-using-package.
+ * @see  https://devdojo.com/bobbyiliev/how-to-add-a-simple-rss-feed-to-laravel-without-using-package.
  */
 
 declare(strict_types=1);
@@ -9,7 +9,6 @@ namespace Modules\Seo\Http\Controllers;
 
 /**
  * Class RssFeedController.
- *
  */
 class RssFeedController {
     /*
