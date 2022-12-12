@@ -12,12 +12,12 @@ return [
 
     'path' => '{language}/{type}/{-title}',
     'collections' => [
-        'posts-it' => [
+        'docs-it' => [
             'type' => 'docs',
             'language' => 'it',
         ],
 
-        'posts-en' => [
+        'docs-en' => [
             'type' => 'docs',
             'language' => 'en',
         ],
