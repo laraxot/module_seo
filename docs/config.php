@@ -13,6 +13,7 @@ return [
     'languages' => ['it', 'en'],
     'path' => 'module_seo/{language}/docs/{filename}',
     'route' => 'module_seo/{language}/docs/{filename}',
+    'language' => 'it',
 
     // 'path' => '{language}/{type}/{-title}',
     // 'collections' => [
