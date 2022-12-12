@@ -11,8 +11,8 @@ return [
     'siteDescription' => '',
 
     'languages' => ['it', 'en'],
-    'path' => '{language}/docs/{filename}',
-    'route' => '{language}/docs/{filename}',
+    'path' => 'module_seo/{language}/docs/{filename}',
+    'route' => 'module_seo/{language}/docs/{filename}',
 
     // 'path' => '{language}/{type}/{-title}',
     // 'collections' => [
