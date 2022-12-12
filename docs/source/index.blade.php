@@ -5,7 +5,7 @@
         <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-24">
             <div class="mt-8">
                 <h1 id="intro-docs-template">{{ $page->siteName }}
-                    [{{ url('/oioi') }}]
+                    [{{ url('/oioi') }}] [{{ $page->language }}]
                 </h1>
 
                 <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">{{ $page->siteDescription }}</h2>
