@@ -1,12 +1,27 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://laraxot.github.io/module_seo',
     'production' => false,
-    'siteName' => 'Docs Starter Template',
-    'siteDescription' => 'Beautiful docs powered by Jigsaw',
+    'siteName' => 'Modulo Seo',
+    'siteDescription' => '',
+
+    'path' => '{language}/{type}/{-title}',
+    'collections' => [
+        'posts-it' => [
+            'type' => 'docs',
+            'language' => 'it',
+        ],
+
+        'posts-en' => [
+            'type' => 'docs',
+            'language' => 'en',
+        ],
+    ],
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
@@ -27,6 +42,6 @@ return [
         }
     },
     'url' => function ($page, $path) {
-        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
+        return Str::startsWith($path, 'http') ? $path : '/'.trimPath($path);
     },
 ];
