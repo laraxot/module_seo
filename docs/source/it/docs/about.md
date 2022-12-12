@@ -3,6 +3,7 @@ title: About Seo
 description: About Seo
 extends: _layouts.documentation
 section: content
+language: it
 ---
 
 # module_seo
