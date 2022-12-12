@@ -29,9 +29,6 @@ jobs:
     - name: Production
       run: cd docs && npm run prod
       
-    - name: CNAME
-      run: cd docs && echo "geekpiu.com/uu" > ./build_production/CNAME
-
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
