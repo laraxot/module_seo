@@ -10,18 +10,22 @@ return [
     'siteName' => 'Modulo Seo',
     'siteDescription' => '',
 
-    'path' => '{language}/{type}/{-title}',
-    'collections' => [
-        'docs-it' => [
-            'type' => 'docs',
-            'language' => 'it',
-        ],
+    'languages' => ['it', 'en'],
+    'path' => '{language}/docs/{filename}',
+    'route' => '{language}/docs/{filename}',
 
-        'docs-en' => [
-            'type' => 'docs',
-            'language' => 'en',
-        ],
-    ],
+    // 'path' => '{language}/{type}/{-title}',
+    // 'collections' => [
+    //     'docs-it' => [
+    //         'type' => 'docs',
+    //         'language' => 'it',
+    //     ],
+
+    //     'docs-en' => [
+    //         'type' => 'docs',
+    //         'language' => 'en',
+    //     ],
+    // ],
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
