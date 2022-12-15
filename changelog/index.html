@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.724411061625">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 2.4.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Changelog</title>
+    <meta name="title" content="Changelog">
+    <meta name="description" content="All notable changes to laravel-data will be documented in this file." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/changelog/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/changelog/">
+    <meta property="og:title" content="Changelog">
+    <meta property="og:description" content="All notable changes to laravel-data will be documented in this file.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/changelog/">
+    <meta property="twitter:title" content="Changelog">
+    <meta property="twitter:description" content="All notable changes to laravel-data will be documented in this file.">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../resources/css/retype.css?v=2.4.0.724411061625" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.724411061625" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.724411061625" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project Name</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../docs/">Docs</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../docs/">Docs</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="grow min-w-0 px-6 md:px-16">
+                        <main class="relative pt-6 pb-16">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="changelog" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#changelog">#</doc-anchor-trigger>
+        <span>Changelog</span>
+    </h1>
+</doc-anchor-target>
+<p>All notable changes to <code v-pre>laravel-data</code> will be documented in this file.</p>
+<doc-anchor-target id="210---2022-12-07">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#210---2022-12-07">#</doc-anchor-trigger>
+        <span>2.1.0 - 2022-12-07</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Stop using custom pipeline when creating data magically from requests</li>
+<li>set timezones in datetime casts (#287 )</li>
+</ul>
+<doc-anchor-target id="2016---2022-11-18">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2016---2022-11-18">#</doc-anchor-trigger>
+        <span>2.0.16 - 2022-11-18</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>add support for optional properties in TypeScript transformer (#153)</li>
+</ul>
+<doc-anchor-target id="2015---2022-11-17">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2015---2022-11-17">#</doc-anchor-trigger>
+        <span>2.0.15 - 2022-11-17</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>refactor test suite to Pest (#239)</li>
+<li>update the docs</li>
+<li>add a <code v-pre>StudlyMapper</code></li>
+<li>add better support for Livewire</li>
+</ul>
+<doc-anchor-target id="2014---2022-11-10">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2014---2022-11-10">#</doc-anchor-trigger>
+        <span>2.0.14 - 2022-11-10</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>accept &#x27;float&#x27; as data type (#237)</li>
+<li>fix typo in mime type validation rule(#243)</li>
+<li>add support for enums in validation attributes</li>
+<li>add support for withoutTrashed to exists validation attribute (#248)</li>
+<li>add PHP 8.2 testing in GH actions</li>
+<li>add ability to modify properties before the data pipeline (#247)</li>
+</ul>
+<doc-anchor-target id="2013---2022-10-14">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2013---2022-10-14">#</doc-anchor-trigger>
+        <span>2.0.13 - 2022-10-14</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fix first and last page url are never null (#215)</li>
+<li>add ability to statically retrieve a data models rules (#221)</li>
+<li>improved pattern matching in DataCollectionAnnotationReader (#225)</li>
+<li>add ExcludeWithout attribute rule (#230)</li>
+<li>improve getValidationRules to also retrieve wildcard rules (#231)</li>
+<li>return property with or without mapping the name (#199)</li>
+</ul>
+<doc-anchor-target id="2012---2022-09-29">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2012---2022-09-29">#</doc-anchor-trigger>
+        <span>2.0.12 - 2022-09-29</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Improve pattern matching in DataCollectionAnnotationReader (#214)</li>
+<li>Add ability to retrieve rules for a data object (#221)</li>
+</ul>
+<doc-anchor-target id="2011---2022-09-28">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2011---2022-09-28">#</doc-anchor-trigger>
+        <span>2.0.11 - 2022-09-28</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Use generics with Data::collection (#213)</li>
+<li>Improve pattern matching in DataCollectionAnnotationReader (#214)</li>
+<li>Fix TypeScript Transformer paginated collections, first and last page url are never null (#215)</li>
+</ul>
+<doc-anchor-target id="2010---2022-09-07">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2010---2022-09-07">#</doc-anchor-trigger>
+        <span>2.0.10 - 2022-09-07</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add support for a JsonSerializer</li>
+<li>Fix generic iterator definition for data collections</li>
+<li>Fix validation of DataCollection objects not working as expected</li>
+</ul>
+<doc-anchor-target id="209---2022-08-23">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#209---2022-08-23">#</doc-anchor-trigger>
+        <span>2.0.9 - 2022-08-23</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add support for timezone manipulation in casts and transformers (#200)</li>
+</ul>
+<doc-anchor-target id="208---2022-08-18">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#208---2022-08-18">#</doc-anchor-trigger>
+        <span>2.0.8 - 2022-08-18</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>use AbstractCloner instead of reflection (#196)</li>
+</ul>
+<doc-anchor-target id="207---2022-08-18">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#207---2022-08-18">#</doc-anchor-trigger>
+        <span>2.0.7 - 2022-08-18</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add var dumper caster (#195)</li>
+<li>Allow direct pipeline call (#193)</li>
+<li>Rename ArrayableNormalizer (#191)</li>
+<li>Make normalizers configurable (#190)</li>
+</ul>
+<doc-anchor-target id="206---2022-08-12">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#206---2022-08-12">#</doc-anchor-trigger>
+        <span>2.0.6 - 2022-08-12</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add cast lazy condition result to bool (#186)</li>
+<li>Add conditional return types for collections (#184)</li>
+<li>Fix windows tests</li>
+</ul>
+<doc-anchor-target id="205---2022-08-10">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#205---2022-08-10">#</doc-anchor-trigger>
+        <span>2.0.5 - 2022-08-10</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Fix validation rules not being used for data collections and objects</li>
+</ul>
+<doc-anchor-target id="204---2022-08-01">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#204---2022-08-01">#</doc-anchor-trigger>
+        <span>2.0.4 - 2022-08-01</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add IDE completion support (#182)</li>
+</ul>
+<doc-anchor-target id="203---2022-07-29">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#203---2022-07-29">#</doc-anchor-trigger>
+        <span>2.0.3 - 2022-07-29</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add support for invokable rules (#179)</li>
+</ul>
+<doc-anchor-target id="202---2022-07-29">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#202---2022-07-29">#</doc-anchor-trigger>
+        <span>2.0.2 - 2022-07-29</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>more consistent use of transform through codebase for transforming collections and data</li>
+</ul>
+<doc-anchor-target id="201---2022-07-13">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#201---2022-07-13">#</doc-anchor-trigger>
+        <span>2.0.1 - 2022-07-13</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add class defined partials (#164)</li>
+<li>Use mapped property names in TypeScript (#154)</li>
+<li>Add make:data command (#157)</li>
+<li>Better support for overwritten rules</li>
+<li>Add support for Lazy inertia props (#163)</li>
+<li>Add support for array query parameters as partials (#162)</li>
+</ul>
+<doc-anchor-target id="200---2022-07-08">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#200---2022-07-08">#</doc-anchor-trigger>
+        <span>2.0.0 - 2022-07-08</span>
+    </h2>
+</doc-anchor-target>
+<p>Version 2 of laravel-data is a complete overhaul, we&#x27;ve almost completely rewritten the package.</p>
+<p>This is a (non-complete) list of the new features:</p>
+<ul>
+<li>A DataPipeline</li>
+<li>Data normalizers</li>
+<li>Mappable property names</li>
+<li>Wrapping of data in responses</li>
+<li><code v-pre>only</code> and <code v-pre>except</code> methods on Data and DataCollections</li>
+<li>Multiple parameter magic methods</li>
+<li>Optional properties</li>
+<li>Split DataCollections</li>
+<li>Better support for TypeScript Transformer</li>
+<li>And a lot more ...</li>
+</ul>
+<doc-anchor-target id="151---2022-07-08">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#151---2022-07-08">#</doc-anchor-trigger>
+        <span>1.5.1 - 2022-07-08</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Fix optional parameters (#152)</li>
+<li>Use protected properties and methods (#147 )</li>
+</ul>
+<doc-anchor-target id="150---2022-05-25">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#150---2022-05-25">#</doc-anchor-trigger>
+        <span>1.5.0 - 2022-05-25</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="whats-changed">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whats-changed">#</doc-anchor-trigger>
+        <span>What&#x27;s Changed</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>add values() on DataCollection by @Nielsvanpach in <a href="https://github.com/spatie/laravel-data/pull/135">https://github.com/spatie/laravel-data/pull/135</a></li>
+</ul>
+<doc-anchor-target id="new-contributors">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-contributors">#</doc-anchor-trigger>
+        <span>New Contributors</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>@Nielsvanpach made their first contribution in <a href="https://github.com/spatie/laravel-data/pull/135">https://github.com/spatie/laravel-data/pull/135</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spatie/laravel-data/compare/1.4.7...1.5.0">https://github.com/spatie/laravel-data/compare/1.4.7...1.5.0</a></p>
+<doc-anchor-target id="147---2022-05-16">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#147---2022-05-16">#</doc-anchor-trigger>
+        <span>1.4.7 - 2022-05-16</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>support $payload as a dependency in rules (#123)</li>
+</ul>
+<doc-anchor-target id="146---2022-04-06">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#146---2022-04-06">#</doc-anchor-trigger>
+        <span>1.4.6 - 2022-04-06</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add Dependency Injection for rules, messages, and attributes methods (#114)</li>
+</ul>
+<doc-anchor-target id="145---2022-03-18">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#145---2022-03-18">#</doc-anchor-trigger>
+        <span>1.4.5 - 2022-03-18</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Add support for stdClass payload casting (#106)</li>
+</ul>
+<doc-anchor-target id="144---2022-03-18">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#144---2022-03-18">#</doc-anchor-trigger>
+        <span>1.4.4 - 2022-03-18</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>use present validation rule instead of required for data collections</li>
+</ul>
+<doc-anchor-target id="143---2022-02-16">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#143---2022-02-16">#</doc-anchor-trigger>
+        <span>1.4.3 - 2022-02-16</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>allow using default password config in password validation attribute (#94)</li>
+<li>solve binding issues on Laravel Octane (#101)</li>
+<li>fixes a bug where models nested by relation could not be created due to date casts</li>
+<li>add a <code v-pre>links</code> array to the paginated response</li>
+<li>stop execution of <code v-pre>lazy::whenLoaded</code> closure when the relation is <code v-pre>null</code></li>
+</ul>
+<doc-anchor-target id="142---2022-01-26">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#142---2022-01-26">#</doc-anchor-trigger>
+        <span>1.4.2 - 2022-01-26</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fix for aborting value assignment after a false boolean (#80)</li>
+<li>add a <code v-pre>WithoutValidation</code> attribute</li>
+<li>allow transformers to target native types, data collections and data objects</li>
+</ul>
+<doc-anchor-target id="141---2022-01-21">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#141---2022-01-21">#</doc-anchor-trigger>
+        <span>1.4.1 - 2022-01-21</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Allow transformers to target Data and DataCollections</li>
+</ul>
+<doc-anchor-target id="140---2022-01-20">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#140---2022-01-20">#</doc-anchor-trigger>
+        <span>1.4.0 - 2022-01-20</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>removes checks for built in types and <code v-pre>isBuiltIn</code> from <code v-pre>DataProperty</code></li>
+<li>add better support for defaults</li>
+</ul>
+<doc-anchor-target id="133---2022-01-20">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#133---2022-01-20">#</doc-anchor-trigger>
+        <span>1.3.3 - 2022-01-20</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="whats-changed-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whats-changed-1">#</doc-anchor-trigger>
+        <span>What&#x27;s Changed</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Laravel 9.x by @aidan-casey in <a href="https://github.com/spatie/laravel-data/pull/77">https://github.com/spatie/laravel-data/pull/77</a></li>
+<li>Removes Spatie&#x27;s Laravel Enums from dev requirements by @aidan-casey in <a href="https://github.com/spatie/laravel-data/pull/76">https://github.com/spatie/laravel-data/pull/76</a></li>
+</ul>
+<doc-anchor-target id="new-contributors-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-contributors-1">#</doc-anchor-trigger>
+        <span>New Contributors</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>@aidan-casey made their first contribution in <a href="https://github.com/spatie/laravel-data/pull/77">https://github.com/spatie/laravel-data/pull/77</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spatie/laravel-data/compare/1.3.2...1.3.3">https://github.com/spatie/laravel-data/compare/1.3.2...1.3.3</a></p>
+<doc-anchor-target id="132---2022-01-19">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#132---2022-01-19">#</doc-anchor-trigger>
+        <span>1.3.2 - 2022-01-19</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>add support for json_encode to Data objects</li>
+<li>add support for json_encode to DataCollection objects</li>
+</ul>
+<doc-anchor-target id="131---2022-01-07">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#131---2022-01-07">#</doc-anchor-trigger>
+        <span>1.3.1 - 2022-01-07</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>add basic support for intersection types</li>
+<li>allow casting of built in PHP types</li>
+<li>add support for inferring enum rules</li>
+<li>fix an issue where an Enum validation attribute would not work</li>
+</ul>
+<doc-anchor-target id="125---2021-12-29">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#125---2021-12-29">#</doc-anchor-trigger>
+        <span>1.2.5 - 2021-12-29</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fixes the RequiredRuleResolver to support custom rules like <code v-pre>Enum</code></li>
+<li>add an Enum validation rule attribute</li>
+</ul>
+<doc-anchor-target id="124---2021-12-16">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#124---2021-12-16">#</doc-anchor-trigger>
+        <span>1.2.4 - 2021-12-16</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>rename the <code v-pre>authorized</code> method to <code v-pre>authorize</code></li>
+<li>disable the behavior were excluded conditional properties still could be included</li>
+</ul>
+<doc-anchor-target id="123---2021-12-03">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#123---2021-12-03">#</doc-anchor-trigger>
+        <span>1.2.3 - 2021-12-03</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fix return type notice message</li>
+</ul>
+<doc-anchor-target id="121---2021-11-19">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#121---2021-11-19">#</doc-anchor-trigger>
+        <span>1.2.1 - 2021-11-19</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fixes an issue where data object could not be created when it had lazy nested data object</li>
+<li>fixes windows test suite</li>
+</ul>
+<doc-anchor-target id="120---2021-11-16">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#120---2021-11-16">#</doc-anchor-trigger>
+        <span>1.2.0 - 2021-11-16</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>when creating data objects, we now will always run validation when a <code v-pre>Request</code> object is given not only when a data object is injected</li>
+<li>removal of <code v-pre>DataFromRequestResolver</code></li>
+<li>added <code v-pre>DataValidatorResolver</code></li>
+</ul>
+<doc-anchor-target id="110---2021-11-12">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#110---2021-11-12">#</doc-anchor-trigger>
+        <span>1.1.0 - 2021-11-12</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>change data property types collection checking procedure</li>
+<li>move <code v-pre>spatie/test-time</code> dependency to require-dev</li>
+<li>expand support for nested data object creation (#19)</li>
+<li>expand support for annotating data collections</li>
+</ul>
+<doc-anchor-target id="104---2021-11-04">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#104---2021-11-04">#</doc-anchor-trigger>
+        <span>1.0.4 - 2021-11-04</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>revert allow ignoring with a closure within a unique rule</li>
+</ul>
+<doc-anchor-target id="103---2021-11-02">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#103---2021-11-02">#</doc-anchor-trigger>
+        <span>1.0.3 - 2021-11-02</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>allow ignoring with a closure within a unique rule</li>
+</ul>
+<doc-anchor-target id="102---2021-11-02">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#102---2021-11-02">#</doc-anchor-trigger>
+        <span>1.0.2 - 2021-11-02</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>add a <code v-pre>WithData</code> trait for quicker getting data from objects</li>
+</ul>
+<doc-anchor-target id="101---2021-10-28">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#101---2021-10-28">#</doc-anchor-trigger>
+        <span>1.0.1 - 2021-10-28</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>fix required rules being added when not allowed</li>
+</ul>
+<doc-anchor-target id="100---2021-10-27">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#100---2021-10-27">#</doc-anchor-trigger>
+        <span>1.0.0 - 2021-10-27</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>initial release</li>
+</ul>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../docs/source/it/docs/navigation/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Navigation</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../license/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">LICENSE</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Changelog", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>

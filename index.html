@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.724324202828">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.724411061625">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Welcome</title>
-    <meta name="title" content="Welcome">
+    <title>Powerful data objects for Laravel</title>
+    <meta name="title" content="Powerful data objects for Laravel">
+    <meta name="description" content="Latest Version on Packagist Tests PHPStan Check & fix styling Total Downloads" />
 
     <!-- Canonical -->
     <link rel="canonical" href="/" />
@@ -18,20 +19,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
-    <meta property="og:title" content="Welcome">
+    <meta property="og:title" content="Powerful data objects for Laravel">
+    <meta property="og:description" content="Latest Version on Packagist Tests PHPStan Check & fix styling Total Downloads">
+    <meta property="og:image" content="https://img.shields.io/packagist/v/spatie/laravel-data.svg?style=flat-square">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/">
-    <meta property="twitter:title" content="Welcome">
+    <meta property="twitter:title" content="Powerful data objects for Laravel">
+    <meta property="twitter:description" content="Latest Version on Packagist Tests PHPStan Check & fix styling Total Downloads">
+    <meta property="twitter:image" content="https://img.shields.io/packagist/v/spatie/laravel-data.svg?style=flat-square">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="resources/css/retype.css?v=2.4.0.724324202828" rel="stylesheet" />
+    <link href="resources/css/retype.css?v=2.4.0.724411061625" rel="stylesheet" />
 
-    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.724324202828" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.724411061625" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.724324202828" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.724411061625" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="resources/js/prism.js?v=2.4.0.724411061625" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -163,12 +169,153 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="welcome" class="break-words">
+<p><a href="https://supportukrainenow.org"><img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" /></a></p>
+<doc-anchor-target id="powerful-data-objects-for-laravel" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#welcome">#</doc-anchor-trigger>
-        <span>Welcome</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#powerful-data-objects-for-laravel">#</doc-anchor-trigger>
+        <span>Powerful data objects for Laravel</span>
     </h1>
 </doc-anchor-target>
+<p><figure class="content-center">
+    <a href="https://packagist.org/packages/spatie/laravel-data">
+        <img src="https://img.shields.io/packagist/v/spatie/laravel-data.svg?style=flat-square" alt="Latest Version on Packagist" />
+    </a>
+    <figcaption class="caption">Latest Version on Packagist</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://github.com/spatie/laravel-data/actions/workflows/run-tests.yml">
+        <img src="https://github.com/spatie/laravel-data/actions/workflows/run-tests.yml/badge.svg" alt="Tests" />
+    </a>
+    <figcaption class="caption">Tests</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://github.com/spatie/laravel-data/actions/workflows/phpstan.yml">
+        <img src="https://github.com/spatie/laravel-data/actions/workflows/phpstan.yml/badge.svg" alt="PHPStan" />
+    </a>
+    <figcaption class="caption">PHPStan</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://github.com/spatie/laravel-data/actions/workflows/php-cs-fixer.yml">
+        <img src="https://github.com/spatie/laravel-data/actions/workflows/php-cs-fixer.yml/badge.svg" alt="Check &amp; fix styling" />
+    </a>
+    <figcaption class="caption">Check &amp; fix styling</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://packagist.org/packages/spatie/laravel-data">
+        <img src="https://img.shields.io/packagist/dt/spatie/laravel-data.svg?style=flat-square" alt="Total Downloads" />
+    </a>
+    <figcaption class="caption">Total Downloads</figcaption>
+</figure>
+</p>
+<p>This package enables the creation of rich data objects which can be used in various ways. Using this package you only need to describe your data once:</p>
+<ul>
+<li>instead of a form request, you can use a data object</li>
+<li>instead of an API transformer, you can use a data object</li>
+<li>instead of manually writing a typescript definition, you can use... <span class="docs-emoji">&#x1F941;</span> a data object</li>
+</ul>
+<p>A <code v-pre>laravel-data</code> specific object is just a regular PHP object that extends from <code v-pre>Data</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-php"><code v-pre class="language-php">use Spatie\LaravelData\Data;
+
+class SongData extends Data
+{
+    public function __construct(
+        public string $title,
+        public string $artist,
+    ) {
+    }
+}</code></pre>
+</doc-codeblock></div>
+<p>By extending from <code v-pre>Data</code> you enable a lot of new functionality like:</p>
+<ul>
+<li>Automatically transforming data objects into resources (like the Laravel API resources)</li>
+<li>Transform only the requested parts of data objects with lazy properties</li>
+<li>Automatically creating data objects from request data and validating them</li>
+<li>Automatically resolve validation rules for properties within a data object</li>
+<li>Make it possible to construct a data object from any type you want</li>
+<li>Add support for automatically validating data objects when creating them</li>
+<li>Generate TypeScript definitions from your data objects you can use on the frontend</li>
+<li>Save data objects as properties of an Eloquent model</li>
+<li>And a lot more ...</li>
+</ul>
+<p>Why would you be using this package?</p>
+<ul>
+<li>You can be sure that data is typed when it leaves your app and comes back again from the frontend which makes a lot less errors</li>
+<li>You don&#x27;t have to write the same properties three times (in a resource, in a data transfer object and in request validation)</li>
+<li>You need to write a lot less of validation rules because they are obvious through PHP&#x27;s type system</li>
+<li>You get TypeScript versions of the data objects for free</li>
+</ul>
+<doc-anchor-target id="are-you-a-visual-learner">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#are-you-a-visual-learner">#</doc-anchor-trigger>
+        <span>Are you a visual learner?</span>
+    </h2>
+</doc-anchor-target>
+<p>In this talk, given at Laracon, you&#x27;ll see <a href="https://www.youtube.com/watch?v=f4QShF42c6E&amp;t=29110s">an introduction to Laravel Data</a>.</p>
+<doc-anchor-target id="support-us">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#support-us">#</doc-anchor-trigger>
+        <span>Support us</span>
+    </h2>
+</doc-anchor-target>
+<p><a href="https://spatie.be/github-ad-click/laravel-data"><img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-data.jpg?t=1" width="419px" /></a></p>
+<p>We invest a lot of resources into creating <a href="https://spatie.be/open-source">best in class open source packages</a>. You can support us by <a href="https://spatie.be/open-source/support-us">buying one of our paid products</a>.</p>
+<p>We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You&#x27;ll find our address on <a href="https://spatie.be/about-us">our contact page</a>. We publish all received postcards on <a href="https://spatie.be/open-source/postcards">our virtual postcard wall</a>.</p>
+<doc-anchor-target id="documentation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#documentation">#</doc-anchor-trigger>
+        <span>Documentation</span>
+    </h2>
+</doc-anchor-target>
+<p>You will find full documentation on the dedicated <a href="https://spatie.be/docs/laravel-data/v2/introduction">documentation</a> site.</p>
+<doc-anchor-target id="testing">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#testing">#</doc-anchor-trigger>
+        <span>Testing</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">composer test</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="changelog">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#changelog">#</doc-anchor-trigger>
+        <span>Changelog</span>
+    </h2>
+</doc-anchor-target>
+<p>Please see <a href="changelog/">CHANGELOG</a> for more information on what has changed recently.</p>
+<doc-anchor-target id="contributing">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contributing">#</doc-anchor-trigger>
+        <span>Contributing</span>
+    </h2>
+</doc-anchor-target>
+<p>Please see <a href="https://github.com/spatie/.github/blob/main/CONTRIBUTING.md">CONTRIBUTING</a> for details.</p>
+<doc-anchor-target id="security-vulnerabilities">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#security-vulnerabilities">#</doc-anchor-trigger>
+        <span>Security Vulnerabilities</span>
+    </h2>
+</doc-anchor-target>
+<p>Please review <a href="../../security/policy">our security policy</a> on how to report security vulnerabilities.</p>
+<doc-anchor-target id="credits">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#credits">#</doc-anchor-trigger>
+        <span>Credits</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://github.com/rubenvanassche">Ruben Van Assche</a></li>
+<li><a href="https://github.com/aidan-casey">Aidan Casey</a> (Validation Attributes)</li>
+<li><a href="../../contributors">All Contributors</a></li>
+</ul>
+<doc-anchor-target id="license">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#license">#</doc-anchor-trigger>
+        <span>License</span>
+    </h2>
+</doc-anchor-target>
+<p>The MIT License (MIT). Please see <a href="license/">License File</a> for more information.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -228,6 +375,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Welcome", isRoot: true, level: 0, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Powerful data objects for Laravel", isRoot: true, level: 0, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
