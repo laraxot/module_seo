@@ -11,3 +11,7 @@ testbench.yaml
 vendor
 node_modules
 .php-cs-fixer.cache
+vendor/
+node_modules/
+*.lock
+*.log
