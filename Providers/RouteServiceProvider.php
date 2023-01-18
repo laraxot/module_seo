@@ -6,8 +6,7 @@ namespace Modules\Seo\Providers;
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
-class RouteServiceProvider extends XotBaseRouteServiceProvider
-{
+class RouteServiceProvider extends XotBaseRouteServiceProvider {
     protected string $moduleNamespace = 'Modules\Seo\Http\Controllers';
 
     protected string $module_dir = __DIR__;
