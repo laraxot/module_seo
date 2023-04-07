@@ -8,8 +8,7 @@ use Illuminate\Console\Command;
 use Spatie\Crawler\Crawler;
 use Spatie\Sitemap\SitemapGenerator;
 
-class SitemapGenerate extends Command
-{
+class SitemapGenerate extends Command {
     /**
      * The console command name.
      *
@@ -29,9 +28,8 @@ class SitemapGenerate extends Command
      *
      * @return mixed
      */
-    public function handle()
-    {
-        // modify this to your own needs
+    public function handle() {
+        // dd(config('app.url'));
         SitemapGenerator::create(config('app.url'))
             ->configureCrawler(function (Crawler $crawler) {
                 $crawler->setMaximumDepth(3);
