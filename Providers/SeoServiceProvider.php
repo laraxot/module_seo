@@ -6,12 +6,14 @@ namespace Modules\Seo\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-class SeoServiceProvider extends XotBaseServiceProvider {
+class SeoServiceProvider extends XotBaseServiceProvider
+{
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
     public string $module_name = 'seo';
 
-    public function bootCallback(): void {
+    public function bootCallback(): void
+    {
         $this->commands(
             [
                 \Modules\Seo\Console\Command\SitemapGenerate::class,
