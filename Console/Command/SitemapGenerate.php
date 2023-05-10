@@ -31,8 +31,11 @@ class SitemapGenerate extends Command
      */
     public function handle()
     {
-        // dd(config('app.url'))
-        $url = strval(config('app.url'));
+        /**
+         * @var string $app_url
+         */
+        $app_url = config('app.url');
+        $url = strval($app_url);
         SitemapGenerator::create($url)
             ->configureCrawler(function (Crawler $crawler) {
                 $crawler->setMaximumDepth(3);
