@@ -1,11 +1,4 @@
 {
-    "name":"laraxot/module_seo",
-    "description":"te vol farte trovar",
-    "homepage":"http://laraxot.github.io/module_seo",
-    "authors":[
-
-    ],
-    "license":"MIT",
     "require": {
         "tightenco/jigsaw": "^1.6",
         "tightenco/jigsaw-docs-template": "^1.1",
